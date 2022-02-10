@@ -8,10 +8,10 @@ export default function NavBar({ user, setUser }) {
         userService.logOut()
         setUser(null)
     }
-    return(
+    return (
         <nav>
-            <Link to="/orders">Order History</Link>
-            &nbsp;&nbsp;<Link to="/orders/new">New Order</Link>
+            <Link to="/orders">Player Profile</Link>
+            &nbsp;&nbsp;<Link to="/orders/new">Search Profile</Link>
             &nbsp;&nbsp;<span>Welcome, {user.name}</span>
             &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
         </nav>
