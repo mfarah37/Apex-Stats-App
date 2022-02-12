@@ -11,7 +11,7 @@ export default function PlayerSearchForm({handleGetPlayer}) {
         <>
         <br />
         <form onSubmit={handleSubmit}>
-            <label style="bold">Gamertag</label>
+            <label>Gamertag</label>
             <input value={content}
             onChange={evt => setContent(evt.target.value)}
             />
