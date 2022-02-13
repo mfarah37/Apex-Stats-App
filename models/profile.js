@@ -7,3 +7,5 @@ const profileSchema = new Schema({
     kills: Number,
     legend: String
 })
+
+module.exports = mongoose.model('Profile', profileSchema)

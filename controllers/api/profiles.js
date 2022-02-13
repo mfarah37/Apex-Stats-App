@@ -9,4 +9,5 @@ async function getProfile(req, res) {
     else {
         console.log('error')
     }
+    console.log('Ctrl fired')
 }

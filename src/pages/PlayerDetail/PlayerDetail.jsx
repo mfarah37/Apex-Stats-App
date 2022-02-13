@@ -31,7 +31,7 @@ console.log(arr)
         <>
             <h1>Player Profile</h1>
             <h2>GT:</h2>
-            {/* <button onClick={handleCheckToken}>Check When My Login Expires</button> */}
+            <button onClick={handleCheckToken}>Check When My Login Expires</button>
         </>
     )
 }

@@ -6,6 +6,7 @@ export default function PlayerSearchForm({handleGetPlayer}) {
     function handleSubmit(evt) {
         evt.preventDefault()
         handleGetPlayer(content)
+        setContent('')
     }
     return (
         <>

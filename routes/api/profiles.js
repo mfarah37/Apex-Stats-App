@@ -2,6 +2,6 @@ const express = require('express')
 const router = express.Router()
 const profilesCtrl = require('../../controllers/api/profiles')
 
-router.get('/:gamertag', profilesCtrl.getProfile)
+router.get('/:playerData', profilesCtrl.getProfile)
 
 module.exports = router;
