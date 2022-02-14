@@ -14,6 +14,7 @@ export default function NavBar({ user, setUser }) {
             <Link className='a' to="/">Home</Link>
             &nbsp;&nbsp;<Link className='a' to="/profiles">Player Profile</Link>
             &nbsp;&nbsp;<Link className='a' to="/profiles/search">Search Profile</Link>
+            &nbsp;&nbsp;<Link className='a' to="/map">Current Map</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;<span className='b'>Welcome, {user.name}</span>
             &nbsp;&nbsp;<Link className='b' to="" onClick={handleLogOut}>Log Out</Link>

@@ -1,0 +1,18 @@
+.maps {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.br-map {
+    height: 50vh;
+}
+
+.arena-map {
+    height: 48vh;
+}
+
+img {
+    position: relative;
+}
