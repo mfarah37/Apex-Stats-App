@@ -17,7 +17,7 @@ This project is a web application which allows user to search and view Apex Lege
 
 [Trello Board](https://trello.com/b/ubSp3QYD/apex-stats)
 
-[Launch App](https://workout-log-p2.herokuapp.com/) 
+[Launch App](https://sei-apex-stats.herokuapp.com/) 
 
 
 ## Next Steps 
