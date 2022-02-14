@@ -21,8 +21,11 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
-  padding: 2vmin;
+  color: white;
+  background-color: rgb(85, 84, 84);
+  /* background-image: url(../imgs/apex.jpeg); */
+  background-size: cover;
+  padding: 0;
   height: 100vh;
 }
 

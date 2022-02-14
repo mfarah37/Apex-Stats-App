@@ -12,9 +12,6 @@ export default function Stats({ player, user }) {
             <td>{player.global.level}</td>
             <td>{player.global.rank.rankName}</td>
             <td>{player.total.kills.value}</td>
-            <td>
-                <button onClick={addGamertag}>✓</button>
-            </td>
         </tbody>
         </>
     )

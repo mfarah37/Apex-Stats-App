@@ -1,0 +1,25 @@
+.player-card {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    
+}
+
+.stats {
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-color: red;
+    border-width: 100%; 
+    border-style: solid;  
+}
+.link {
+    align-self: flex-end;
+}
+
+img {
+    width: 300px;  
+    height: auto;  
+    text-align: center;  
+    padding: 15px; 
+}

@@ -1,7 +1,17 @@
-.stats-table {
+.container {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-table {
-    justify-content: center;
+.form {
+   text-align: center;
+   width: min-content;
+   size: cover;
+}
+.stats-table {
+    background-color: white;
+    color: black;
 }

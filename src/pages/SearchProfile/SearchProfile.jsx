@@ -15,26 +15,31 @@ export default function SearchProfile({ user }) {
     
     console.log(user.gamertag)
     return (
-        <>
-        <PlayerSearchForm handleGetPlayer={handleGetPlayer} />
-        {players ?
-        <div className="stats-table">
-        <table>
-            <thead>
-                <th>Steam Name</th>
-                <th>Level</th>
-                <th>Rank</th>
-                <th>Kills</th>
-                <th>Add Profile</th>
-            </thead>
-            {players.map((player, idx) => (
-                <Stats player={player} key={idx} idx={idx} user={user} />
-            ))}
-        </table>
+        <div className="container">
+            <div className="form">
+                <br /> <br />
+                <PlayerSearchForm handleGetPlayer={handleGetPlayer} />
+                <br /> <br />
+            </div>
+            {players ?
+            <div className="stats-table">
+                <table>
+                    <thead>
+                        <th>Steam Name</th>
+                        <th>Level</th>
+                        <th>Rank</th>
+                        <th>Kills</th>
+                    </thead>
+                    {players.map((player, idx) => (
+                        <Stats player={player} key={idx} idx={idx} user={user} />
+                    ))}
+                </table>
+            </div>
+            :
+            <div className="text">
+                <h1>Enter Origin Gamertag</h1>
+            </div>
+            }
         </div>
-        :
-        <h1>Enter Origin Gamertag</h1>
-        }
-        </>
     )
 }

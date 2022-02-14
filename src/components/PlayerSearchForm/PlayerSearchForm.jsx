@@ -1,3 +1,5 @@
+import './PlayerSearchForm.css'
+
 import { useState } from "react";
 
 export default function PlayerSearchForm({handleGetPlayer}) {
@@ -9,15 +11,16 @@ export default function PlayerSearchForm({handleGetPlayer}) {
         setContent('')
     }
     return (
-        <>
-        <br />
-        <form onSubmit={handleSubmit}>
-            <label>Gamertag</label>
-            <input value={content}
-            onChange={evt => setContent(evt.target.value)}
-            />
-            <button type="submit">Search</button>
-        </form>
-        </>
+        <div className="search-form">
+            <br />
+            <div className="form">
+                <form onSubmit={handleSubmit}>
+                    <input value={content}
+                    onChange={evt => setContent(evt.target.value)}
+                    />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
     )
 }

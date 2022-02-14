@@ -1,0 +1,13 @@
+nav {
+    background-color: rgb(43, 38, 38);
+    font-family: sans-serif;
+    color: yellow;
+}
+
+.a {
+    color: white;
+}
+.b {
+    margin: 0 0 0 30px;
+    color: white;
+}
