@@ -10,7 +10,8 @@ export default function NavBar({ user, setUser }) {
     }
     return (
         <nav>
-            <Link to="/profiles">Player Profile</Link>
+            <Link to="/">Home</Link>
+            &nbsp;&nbsp;<Link to="/profiles">Player Profile</Link>
             &nbsp;&nbsp;<Link to="/profiles/search">Search Profile</Link>
             &nbsp;&nbsp;<span>Welcome, {user.name}</span>
             &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>

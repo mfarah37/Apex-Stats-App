@@ -1,0 +1,7 @@
+.stats-table {
+    display: flex;
+}
+
+table {
+    justify-content: center;
+}

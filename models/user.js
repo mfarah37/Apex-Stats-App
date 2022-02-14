@@ -13,12 +13,13 @@ const userSchema = new Schema({
     lowercase: true,
     required: true
   },
-  password: {
-    type: String,
-    trim: true,
-    minLength: 3,
-    required: true
-  }
+    password: {
+        type: String,
+        trim: true,
+        minLength: 3,
+        required: true
+    },
+    gamertag: String 
 }, {
     timestamps: true,
     //Even though it's hashed -- dont serialize the password

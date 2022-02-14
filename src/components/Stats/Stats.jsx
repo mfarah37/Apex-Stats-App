@@ -1,5 +1,10 @@
-export default function Stats({ player }) {
+import './Stats.css';
+export default function Stats({ player, user }) {
     
+    function addGamertag() {
+        console.log(user.gamertag)
+    }
+
     return (
         <>
         <tbody>
@@ -8,7 +13,7 @@ export default function Stats({ player }) {
             <td>{player.global.rank.rankName}</td>
             <td>{player.total.kills.value}</td>
             <td>
-                <button>✓</button>
+                <button onClick={addGamertag}>✓</button>
             </td>
         </tbody>
         </>
