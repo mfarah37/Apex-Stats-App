@@ -13,7 +13,6 @@ export default function SearchProfile({ user }) {
         setPlayers([...players, player])
     }
     
-    console.log(user.gamertag)
     return (
         <div className="container">
             <div className="form">
@@ -26,9 +25,8 @@ export default function SearchProfile({ user }) {
                 <table>
                     <thead>
                         <th>Steam Name</th>
-                        <th>Level</th>
-                        <th>Rank</th>
-                        <th>Kills</th>
+                        <th>Platform</th>
+                        <th>Status</th>
                     </thead>
                     {players.map((player, idx) => (
                         <Stats player={player} key={idx} idx={idx} user={user} />

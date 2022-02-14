@@ -10,7 +10,7 @@ export default function MapPage() {
         setMaps(res)
         })
     }, [])
-    console.log(maps)
+    
     return (
         <>
         {maps ?

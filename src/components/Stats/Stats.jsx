@@ -1,17 +1,17 @@
 import './Stats.css';
 export default function Stats({ player, user }) {
     
-    function addGamertag() {
-        console.log(user.gamertag)
-    }
-
     return (
         <>
         <tbody>
             <td>{player.global.name}</td>
-            <td>{player.global.level}</td>
-            <td>{player.global.rank.rankName}</td>
-            <td>{player.total.kills.value}</td>
+            <td>{player.global.platform}</td>
+            {
+            player.realtime.isOnline ?
+                <td>Online</td>
+            :
+                <td>Offline</td>
+            }
         </tbody>
         </>
     )
