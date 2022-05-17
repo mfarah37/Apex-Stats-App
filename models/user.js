@@ -4,6 +4,10 @@ const bcrypt = require('bcrypt')
 
 const SALT_ROUNDS = 6 //6 is a reasonable value(hash) 
 
+const gamertagSchema = new Schema({
+    gamertag: {type: String}
+})
+
 const userSchema = new Schema({
     name: {type: String, required: true},
     email: {
@@ -19,7 +23,7 @@ const userSchema = new Schema({
         minLength: 3,
         required: true
     },
-    gamertag: String 
+    gamertag: [gamertagSchema],
 }, {
     timestamps: true,
     //Even though it's hashed -- dont serialize the password
@@ -37,6 +41,10 @@ userSchema.pre('save', async function(next) {
     //Update the password with the computed hash
     this.password = await bcrypt.hash(this.password, SALT_ROUNDS)
     return next() 
+})
+
+userSchema.pre('save', async function(next) {
+    if (!this.isModified('gamertag')) return next()
 })
 
 module.exports = mongoose.model('User', userSchema)
